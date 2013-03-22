@@ -2,7 +2,7 @@
  * Model Creation
  */
 var mongoose = require('mongoose');
-mongoose.connect(' mongodb://demo:demo@dbh86.mongolab.com:27867/nodejs-clouds', { server: { auto_reconnect: false }});
+mongoose.connect('mongodb://localhost/node', { server: { auto_reconnect: false }});
 
 var CommentSchema = new mongoose.Schema({
   message: { type: String },
