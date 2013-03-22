@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Node.js en las Nubes</title>
+        <meta name="description" content="NodeJS en las Nubes">
+        <meta name="author" content="Julián Duque">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+        	document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+
+
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section data-markdown>
+                  # Node.js 
+                  #### en las Nubes
+                  
+                  ![A cloud](images/cloud.png)
+                </section>
+                
+                <section data-markdown>
+                  ## Julián David Duque 
+                  Developer by Passion
+                  
+                  [@julian_duque](http://www.twitter.com/julian_duque)
+                  
+                </section>
+                
+                <section data-markdown>
+                    Primer Movimiento
+                    
+                    # Node.js
+                </section>
+        
+                <section data-markdown>
+                    ![Google v8 Engine](images/v8.png)
+                    
+                    <p class="fragment">Google Chrome JavaScript Engine</p>
+                </section>
+                
+                <section data-markdown>
+                    ### Main Features
+                    <br />
+                    <ul>
+                        <li class="fragment">Event Driven</li>
+                        <li class="fragment">Non Blocking I/O</li>
+                        <li class="fragment">Lightweight</li>
+                        <li class="fragment">Efficient</li>
+                    </ul>
+                </section>
+                
+                <section data-markdown>
+                    ![Event Loop](images/eventloop.png)
+                </section>
+                
+                <section data-markdown>
+                    ### Perfect for
+                    
+                    <p class="fragment">data-intensive real-time applications that run across distributed devices</p>
+                </section>
+                
+                <section data-markdown>
+                    Segundo Movimiento
+                    
+                    # Web Frameworks
+                </section>
+                
+                <section data-markdown>
+                    ## express
+                    
+                    [http://expressjs.com](http://expressjs.com)
+                    <p class="fragment">minimal and flexible Node.js web framework</p>
+                </section>
+                
+                 <section data-markdown>
+                    ## Perfect for
+                    
+                    <p class="fragment">API creation</p>
+                    <p class="fragment">Framework creation</p>
+                </section>
+                
+                <section data-markdown>
+                    ## Tower.js
+                    
+                    [http://towerjs.org](http://towerjs.org)
+                    <p class="fragment">Full Stack Web Framework</p>
+                    <p class="fragment">Built on top Express</p>
+                </section>
+                
+                 <section data-markdown>
+                    ## Stack
+                    
+                    <ul>
+                        <li class="fragment">MongoDB (Database)</li>
+                        <li class="fragment">Redis (background jobs)</li>
+                        <li class="fragment">CoffeeScript</li>
+                        <li class="fragment">Stylus</li>
+                        <li class="fragment">Jasmine (tests)</li>
+                        <li class="fragment">jQuery</li>
+                    </ul>
+                </section>
+                
+                <section data-markdown>
+                    ## Derby
+                    
+                    [http://derbyjs.com](http://derbyjs.com)
+                    <p class="fragment">MVC Framework</p>
+                    <p class="fragment">Built on top Express</p>
+                </section>
+                
+                <section data-markdown>
+                    ## Others
+                    
+                    <ul>
+                        <li class="fragment"><a href="http://railwayjs.com">RailwayJS</a></li>
+                        <li class="fragment"><a href="http://batmanjs.org">batman.js</a></li>
+                        <li class="fragment"><a href="http://flatironjs.org">Flatiron</a></li>
+                    </ul>
+                </section>
+                
+                <section data-markdown>
+                    ## Your own!
+                    
+                    <pre>
+                        <code>
+                            var http = require('http');
+
+                            http.createServer(function(req, res) {
+                                res.writeHead(200);
+                                res.write("Hello MedellinJS!");
+                                res.end();
+                            }).listen(8080);
+                        </code>
+                    </pre>
+                </section>
+                
+                
+                <section data-markdown>
+                    Tercer (y último) Movimiento
+                    
+                    # Clouds!
+                    ![A cloud](images/cloud.png)
+                </section>
+                
+                <section data-markdown>
+                    # Demo Time!
+                </section>
+                
+                <section data-markdown>
+                    ![Heroku](images/heroku.png)
+                </section>
+                
+                <section data-markdown>
+                    ![Windows Azure](images/azure.png)
+                </section>
+                
+                <section data-markdown>
+                    ![Nodejitsu](images/nodejitsu.png)
+                </section>
+                
+                <section data-markdown>
+                    ## Fork this
+                    
+                    [https://github.com/medellinjs/nodejs-clouds-talk](https://github.com/medellinjs/nodejs-clouds-talk)
+                </section>
+    
+                
+            </div>
+            
+            <aside class="footer-logo" style="display:block;">
+                <a href="index.html">
+                    <img src="images/nodejs.png" />
+                </a>
+            </aside>
+
+            <aside class="footer-license" style="display:block;">
+                <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">NodeJS en las Nubes</span> por <a xmlns:cc="http://creativecommons.org/ns#" href="http://about.me/julianduque" property="cc:attributionName" rel="cc:attributionURL">Julián Duque</a> esta licenciada con <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+            </aside>
+        </div>
+
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+
+                theme: Reveal.getQueryHash().theme || 'default', // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/linear(2d)
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/highlight.js', async: true, callback: function() { window.hljs.initHighlightingOnLoad(); } },
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'lib/js/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'lib/js/data-markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } }
+                    ]
+            });
+
+        </script>
+
+
+    </body>
+</html>
